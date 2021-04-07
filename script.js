@@ -78,6 +78,13 @@ const people = [
 
 //   .Map,.filter,.reduce, some, forEach, for Loop, sort
 
+// for Each method
+
+
+inventors.forEach(function(identity){
+  console.log(identity.passed);
+});
+
 //    .map method
 
 const bornYear = inventors.map(function(born){
@@ -86,14 +93,11 @@ const bornYear = inventors.map(function(born){
 
 console.log(bornYear)
 
-const livedTenYears = inventors.filter(function(lived){
+const livedYears = inventors.filter(function(lived){
   return (lived.year >= 1815 && lived.year < 1909)
   
 });
-console.log(livedTenYears)
-
-
-
+console.log(livedYears)
 
 
 const names = people.map(function(persons){
@@ -108,13 +112,13 @@ const passed = inventors.map(function(died){
 
 console.log(passed)
 
-//    filter method
 
-const filtered = inventors.filter(function(evenYears){
+
+const firstName = inventors.filter(function(evenYears){
  return evenYears ;
 })
 
-console.log(filtered)
+console.log(firstName)
 
 
 //    filter method
@@ -141,3 +145,5 @@ const adults = peoples.filter(function(person){
 })
 
 console.log(adults)
+
+
