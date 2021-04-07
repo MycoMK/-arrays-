@@ -147,3 +147,20 @@ const adults = peoples.filter(function(person){
 console.log(adults)
 
 
+
+const rootEl = document.querySelector('#root');
+
+function createParagraph(inventor, color = 'pink') {
+  const paragraph = document.createElement('p');
+  // paragraph.style.background = color;
+  // paragraph.style.padding = '20px';
+  // paragraph.style.fontWeight = '600';
+  paragraph.textContent = `${inventor.first} ${inventor.last} was born from ${inventor.year} and passed in ${inventor.passed}`;
+  rootEl.appendChild(paragraph);
+}
+
+inventors.forEach(function(inventor) {
+  return createParagraph(inventor);
+});
+
+
