@@ -1,4 +1,4 @@
-console.log('connected')
+// console.log('connected')
 
 const people = [
     'Bernhard, Sandra',
@@ -163,4 +163,15 @@ inventors.forEach(function(inventor) {
   return createParagraph(inventor);
 });
 
+const num = () =>{
+  return Math.floor(math.random()*6) +1
+}
+// API https://jsonplaceholder.typicode.com/users
+
+// fetch('https://reqres.in/api/users')
+//   .then(res => res.json())
+//   .then(data => console.log(data))
+   
+   
+    
 
