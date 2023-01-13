@@ -168,10 +168,11 @@ const num = () =>{
 }
 // API https://jsonplaceholder.typicode.com/users
 
-// fetch('https://reqres.in/api/users')
-//   .then(res => res.json())
-//   .then(data => console.log(data))
-   
+fetch('https://reqres.in/api/users')
+  .then(res => res.json())
+  .then(data => console.log(data))
+
+
    
     
 
